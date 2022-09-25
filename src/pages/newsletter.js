@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
 const NewsLetter = () => {
-  return <Layout>
+  return (
+  <Layout>
     <section className="newsletter-page">
       <div className="page-center">
 
         <h2>Test</h2>
-
-
 
         <form className="contact-form"
         name="testing-contact"
@@ -16,15 +15,9 @@ const NewsLetter = () => {
         data-netlify="true"
         action="/success"
       >
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
-
-        
-        
-        
         
         <input type="hidden" name="bot-field"/>
-        <input type="hidden" name="form-name" value="testing-contac"/>
+        <input type="hidden" name="form-name" value="testing-contact"/>
           <input
           type="text"
           name="name"
@@ -49,6 +42,7 @@ const NewsLetter = () => {
 
 
   </Layout>
+  )
 }
 
 export default NewsLetter
